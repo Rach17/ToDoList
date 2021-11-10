@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 600px;
+  margin: 50px auto;
+}
+
+.form {
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasks {
+  background-color: #eee;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+input.input {
+  width: 400px;
+  padding: 10px;
+  border: 0px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+input.add {
+  background-color: #ec4031;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-family: sans-serif;
+}
+.task:not(.task:last-child) {
+  margin-bottom: 25px;
+}
+
+.task button {
+  border: 0;
+  width: 100px;
+  background-color: #f00;
+  border-radius: 5px;
+  padding: 5px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+input.add:hover {
+  background-color: #d13628;
+}
+
+input.input:focus,
+.add:focus {
+  outline: 0;
+}
